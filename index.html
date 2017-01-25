@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Windows Privilege Escalation Exploit Search -- Windows 提权辅助</title>
+    <meta charset="utf-8">
+    <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="./js/win-exp.js"></script>
+</head>
+<body>
+
+<!-- nav bar -->
+<nav class="navbar navbar-default">
+<div class="container">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href=".">Windows Privilege Escalation Exploit</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="">EXP搜索</a></li>
+        <li><a href="">帮助文档</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="content">
+    <div class="col-md-6">
+      <form id='patch-form'>
+        <div class="form-group">
+        <label for="patchlist">已经打过的补丁列表：</label> 
+        <textarea class="form-control" id="patchlist" rows="20" placeholder='运行systeminfo命令获取补丁列表'></textarea>
+        </div>
+      </form>
+      <button type="button" class="btn btn-info" id='get-exp-info'>获取对应的提权EXP</button>
+    </div>
+    <div class="col-md-6">
+      
+    </div>
+  </div>
+</div>
+
+<div class=""></div>
+
+</body>
+</html>
