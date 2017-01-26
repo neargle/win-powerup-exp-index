@@ -1,10 +1,10 @@
-windows privilege escalation exploits search tools
+# windows privilege escalation exploits search tools
 
-windows提权EXP搜索辅助工具
+# windows提权EXP搜索辅助工具
 
 ----
 
-[http://neargle.github.io/win-powerup-exp-index](http://neargle.github.io/win-powerup-exp-index)
+点击使用： [http://neargle.github.io/win-powerup-exp-index](http://neargle.github.io/win-powerup-exp-index)
 
 ![](http://ww1.sinaimg.cn/large/005y7Ba5gy1fc4e8pk6w4j31kw0qoqcc&690)
 
