@@ -1,4 +1,4 @@
-windows privilege escalation exploit search
+windows privilege escalation exploits search tools
 
 windows提权EXP搜索辅助工具
 
