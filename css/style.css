@@ -1,9 +1,31 @@
+body {
+    font-family: 'Helvetica Neue',Helvetica,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;
+}
 
-#patch-form label {
+.container label {
     font-size: 16px;
     margin-bottom: 12px;
 }
 
+.list-group label {
+    margin-top: 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+div#alert-not-null {
+    display: None;
+}
+
 #get-exp-info {
-    
+/*TODO*/
+}
+
+.list-group-item strong {
+    color: #00eadb;
+}
+
+.list-group-item.list-group-item-action.flex-column.align-items-start {
+    padding-top: 0;
+    padding-bottom: 0;
 }

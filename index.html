@@ -3,7 +3,7 @@
 <head>
     <title>Windows Privilege Escalation Exploit Search -- Windows 提权辅助</title>
     <meta charset="utf-8">
-    <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+    <script src="./js/jquery.js"></script>
     <link href="./css/bootstrap.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
     <script type="text/javascript" src="./js/win-exp.js"></script>
@@ -27,24 +27,70 @@
   </div>
   </div>
 </nav>
+
+<!-- container -->
 <div class="container">
-  <div class="content">
-    <div class="col-md-6">
-      <form id='patch-form'>
-        <div class="form-group">
-        <label for="patchlist">已经打过的补丁列表：</label> 
-        <textarea class="form-control" id="patchlist" rows="20" placeholder='运行systeminfo命令获取补丁列表'></textarea>
-        </div>
-      </form>
-      <button type="button" class="btn btn-info" id='get-exp-info'>获取对应的提权EXP</button>
+<!-- patch form -->
+<div class="col-md-6">
+  <form id='patch-form'>
+    <div class="form-group">
+    <label for="patchlist">主机补丁信息：</label> 
+    <textarea class="form-control" id="patchlist" rows="20" placeholder='运行systeminfo命令获取补丁列表'></textarea>
     </div>
-    <div class="col-md-6">
-      
+  </form>
+  <button type="button" class="btn btn-info" id='get-exp-info' onclick="show_exp_info()">获取对应的提权EXP</button>
+</div>
+<!-- form end -->
+
+
+<div class="col-md-6">
+  <div id='exp-div'>
+    <label>或许可用的Windows提权EXP信息</label>
+    <div class="alert alert-warning" role="alert" id='alert-not-null'>
+      <button type="button" class="close" onclick="close_alert(this)">
+          <span aria-hidden="true">&times;</span>
+      </button>
+      补丁列表不得为空！！
     </div>
+    <div class="list-group" id="exp-info-list">
+    <article class="markdown-body">
+    <h3 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>使用</h3>
+    <p>运行cmd命令<code>systeminfo</code>获取信息，粘贴systeminfo信息或只粘贴补丁信息到编辑框内。</p>
+    <p>例如：</p>
+    <blockquote>
+    <p>[01]: KB3124263<br />
+    [02]: KB3135173<br />
+    [03]: KB3139907<br />
+    [04]: KB3140741<br />
+    [05]: KB3140743<br />
+    [06]: KB3140768<br />
+    [07]: KB3149135<br />
+    [08]: KB3172729<br />
+    [09]: KB3173428<br />
+    [10]: KB3181403<br />
+    [11]: KB3214628<br />
+    [12]: KB3147458</p>
+    </blockquote>
+    <p>或者直接粘贴所有<code>systeminfo</code>:</p>
+    <blockquote>
+    <p>$ systeminfo<br />
+    主机名:           NEARGLE-77359B7<br />
+    OS 名称:          Microsoft Windows XP Professional<br />
+    OS 版本:          5.1.2600 Service Pack 3 Build 2600<br />
+    OS 制造商:        Microsoft Corporation<br />
+    OS 配置:          独立工作站<br />
+    OS 构件类型:      Uniprocessor Free<br />
+    注册的所有人:     Neargle<br />
+    ......</p>
+    </blockquote>
+    <p>就能对应自己的系统版本找到适合的Exploit编号，然后搜索引擎吧0-0</p>
+    </article>
+    </div>
+
   </div>
 </div>
-
-<div class=""></div>
+</div>
+<!-- container end -->
 
 </body>
 </html>
