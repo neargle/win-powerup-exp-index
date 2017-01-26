@@ -4,6 +4,10 @@ windows提权EXP搜索辅助工具
 
 ----
 
+[http://neargle.github.io/win-powerup-exp-index](http://neargle.github.io/win-powerup-exp-index)
+
+![](http://ww1.sinaimg.cn/large/005y7Ba5gy1fc4e8pk6w4j31kw0qoqcc&690)
+
 # About
 
 在火车上闲着没事干，突然发现电脑内还有这样一个列表，就想看看在没有网络的情况下自己能不能写出一个东西来。用SublimeText3+Dash3+Chrome三个软件写了这个东西。回家做了一个小手术，躺在床上没事干就扔了上来。
