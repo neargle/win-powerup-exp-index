@@ -4,8 +4,7 @@
 
 在火车上面闲着没事写的轮子,点击使用： [http://neargle.github.io/win-powerup-exp-index](http://neargle.github.io/win-powerup-exp-index)
 
-![](http://wx4.sinaimg.cn/large/005y7Ba5gy1fc4ekogm07j31kw0qngrw.jpg)
-
+![image](https://user-images.githubusercontent.com/7868679/84858397-ae5e6f80-b09d-11ea-95e4-f53e1941343c.png)
 
 # About
 
